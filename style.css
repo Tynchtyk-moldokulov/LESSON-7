@@ -1,0 +1,45 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.section{
+    height: 75vh;
+    background-image: url(https://art.pixilart.com/sr2977028c7a5aws3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+.h2{
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #000;
+    margin-bottom: 20px;
+}
+hr{
+    margin-bottom: 8px 12px;
+}
+.button{
+    padding: 8px 12px;
+    width: 100px;
+    background-color: red;
+    color: aquamarine;
+}
+.sec_img{
+    width: 100px;
+    height: auto;
+    position: absolute;
+    object-fit: cover;
+    left: -100px;
+    top: 20px;
+    transition: left 0.5s ease;
+}
+.sec_img.active{
+    left: 50%;
+    transform: translate(-50%,0);
+}
